@@ -23,7 +23,7 @@ class MainWindowActivity : AppCompatActivity() {
     fun onLogOutButtonClicked(item: MenuItem) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-        finish()
+        finish()   
     }
 
 }
