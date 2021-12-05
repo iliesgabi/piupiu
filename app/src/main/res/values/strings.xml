@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">solar_energy_usage</string>
+    <string name="LogIn">Log In</string>
+    <string name="register">Register</string>
 </resources>

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Solar_energy_usage">
         <activity
+            android:name=".MainWindowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LogInActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
