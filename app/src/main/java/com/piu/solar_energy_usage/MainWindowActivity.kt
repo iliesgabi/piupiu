@@ -7,6 +7,7 @@ import android.view.Gravity
 import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
+import com.piu.solar_energy_usage.meteo.WeatherActivity
 
 class MainWindowActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,12 @@ class MainWindowActivity : AppCompatActivity() {
     fun onLogOutButtonClicked(item: MenuItem) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-        finish()   
+        finish()
     }
 
+    fun onWeatherButtonClicked(item: MenuItem) {
+        val intent = Intent(this, WeatherActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 }

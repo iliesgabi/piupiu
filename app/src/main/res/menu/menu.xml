@@ -26,6 +26,7 @@
                     android:icon="@drawable/ic_launcher_background"
                     android:title="Suggestions" />
                 <item
+                    android:onClick="onWeatherButtonClicked"
                     android:id="@+id/item6"
                     android:icon="@drawable/ic_launcher_background"
                     android:title="Weather" />
