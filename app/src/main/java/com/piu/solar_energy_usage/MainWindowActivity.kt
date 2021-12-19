@@ -7,6 +7,7 @@ import android.view.Gravity
 import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
+import com.piu.solar_energy_usage.invoice.InvoiceActivity
 import com.piu.solar_energy_usage.meteo.WeatherActivity
 
 class MainWindowActivity : AppCompatActivity() {
@@ -30,6 +31,10 @@ class MainWindowActivity : AppCompatActivity() {
     fun onWeatherButtonClicked(item: MenuItem) {
         val intent = Intent(this, WeatherActivity::class.java)
         startActivity(intent)
-        finish()
+    }
+
+    fun onInvoiceButtonClicked(item: MenuItem) {
+        val intent = Intent(this, InvoiceActivity::class.java)
+        startActivity(intent)
     }
 }

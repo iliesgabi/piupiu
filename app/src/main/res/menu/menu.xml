@@ -10,8 +10,9 @@
                     android:icon="@drawable/ic_launcher_background"
                     android:title="Devices" />
                 <item
+                    android:onClick="onInvoiceButtonClicked"
                     android:id="@+id/item2"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/invoices"
                     android:title="Invoice" />
                 <item
                     android:id="@+id/item3"
@@ -28,7 +29,7 @@
                 <item
                     android:onClick="onWeatherButtonClicked"
                     android:id="@+id/item6"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/weather"
                     android:title="Weather" />
             </menu>
         </item>
