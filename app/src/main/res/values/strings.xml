@@ -2,4 +2,12 @@
     <string name="app_name">solar_energy_usage</string>
     <string name="LogIn">Log In</string>
     <string name="register">Register</string>
+    <string name="invoices">Invoices</string>
+    <string name="payment">Payment</string>
+    <string name="card_number">card number</string>
+    <string name="security_code">security code</string>
+    <string name="cardholder_name">cardholder name</string>
+    <string name="expiration_date">expiration date</string>
+    <string name="pay">pay</string>
+    <string name="card_details">Card details</string>
 </resources>
