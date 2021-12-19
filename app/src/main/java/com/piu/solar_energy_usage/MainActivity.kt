@@ -14,19 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val logInButton = findViewById<Button>(R.id.logInButton)
-//        logInButton.setOnClickListener {
-//            val intent = Intent(this, LogInActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//        val registerButton = findViewById<Button>(R.id.registerButton)
-//        registerButton.setOnClickListener {
-//            val intent = Intent(this, RegisterActivity::class.java)
-//            startActivity(intent)
-//        }
+        val logInButton = findViewById<Button>(R.id.logInButton)
+        logInButton.setOnClickListener {
+            val intent = Intent(this, LogInActivity::class.java)
+            startActivity(intent)
+        }
 
-        val intent = Intent(this, WeatherActivity::class.java)
-        startActivity(intent)
+        val registerButton = findViewById<Button>(R.id.registerButton)
+        registerButton.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
