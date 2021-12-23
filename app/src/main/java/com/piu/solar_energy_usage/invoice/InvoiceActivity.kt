@@ -34,24 +34,32 @@ class InvoiceActivity : AppCompatActivity() {
             Util.first = 1
             invoiceAdapter.setDataSource(Util.dataSource)
         } else {
-            val invoice = intent.getSerializableExtra("invoice") as Invoice
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("you paid invoice no. " + invoice.number)
-                .setNegativeButton("close", null)
-                .create().show()
-            invoiceAdapter.setDataSource(Util.dataSource)
+            if (intent.getSerializableExtra("invoice") != null) {
+                val invoice = intent.getSerializableExtra("invoice") as Invoice
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("you paid invoice no. " + invoice.number)
+                    .setNegativeButton("close", null)
+                    .create().show()
+                invoiceAdapter.setDataSource(Util.dataSource)
+            } else {
+                invoiceAdapter.setDataSource(Util.dataSource)
+            }
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        val invoice = data?.getSerializableExtra("invoice") as Invoice
+        if (data?.getSerializableExtra("invoice") != null) {
+            val invoice = data?.getSerializableExtra("invoice") as Invoice
 
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("you paid invoice no. " + invoice.number)
-            .setNegativeButton("close", null)
-            .create().show()
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("you paid invoice no. " + invoice.number)
+                .setNegativeButton("close", null)
+                .create().show()
 
-        invoiceAdapter.setPaid(invoice)
+            invoiceAdapter.setPaid(invoice)
+        } else {
+            invoiceAdapter.setDataSource(Util.dataSource)
+        }
         super.onActivityResult(requestCode, resultCode, data)
     }
 }
