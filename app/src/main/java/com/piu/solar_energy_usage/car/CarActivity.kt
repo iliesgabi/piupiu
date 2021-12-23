@@ -14,20 +14,38 @@ class CarActivity : AppCompatActivity() {
         val speed = findViewById<TextView>(R.id.speedTextView)
         val hour = findViewById<TextView>(R.id.hoursTextView)
 
-        val timer = Timer()
-        timer.scheduleAtFixedRate(object : TimerTask() {
-            override fun run() {
-                val value = (500..1000).random()
-                val speedValue = "" + value + "W"
+        val refresh = Runnable {
+            val value = (500..1000).random()
+            val speedValue = "" + value + "W"
 
-                speed.text = speedValue
+            speed.text = speedValue
 
-                val time = (5..10).random()
+            if (value > 700) {
+                val time = (5..7).random()
+                val timeValue = "" + time + " hours remaining"
+
+                hour.text = timeValue
+            } else {
+                val time = (7..10).random()
                 val timeValue = "" + time + " hours remaining"
 
                 hour.text = timeValue
             }
-        }, 0, 700)
+        }
+
+        val updateThread: Thread = object : Thread() {
+            override fun run() {
+                try {
+                    while (!isInterrupted) {
+                        sleep(700)
+                        runOnUiThread(refresh)
+                    }
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                }
+            }
+        }
+        updateThread.start()
 
     }
 }

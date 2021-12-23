@@ -15,7 +15,8 @@
         android:layout_margin="20dp"
         android:text="@string/car"
         android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/chargingTextView"
@@ -40,24 +41,39 @@
         />
 
     <pl.droidsonroids.gif.GifImageView
-        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:src="@drawable/loading"
-        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/speedTextView"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="600W"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Speed: "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/speedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="600W"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
 </LinearLayout>
