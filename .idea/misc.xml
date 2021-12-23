@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/car.xml" value="0.22291666666666668" />
         <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/card_back.xml" value="0.18541666666666667" />
         <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4203125" />
         <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/ic_pick.xml" value="0.246875" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_car.xml" value="0.35144927536231885" />
         <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_card_details.xml" value="0.264" />
         <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_invoice.xml" value="0.35144927536231885" />
         <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_payment.xml" value="0.23072916666666668" />

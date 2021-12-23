@@ -1,6 +1,7 @@
 package com.piu.solar_energy_usage.meteo
 
 import android.content.pm.PackageManager
+import android.location.Geocoder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -16,6 +17,7 @@ import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.IOException
 import java.util.*
 
 class WeatherActivity : AppCompatActivity() {
@@ -145,19 +147,22 @@ class WeatherActivity : AppCompatActivity() {
             )
         }
 
-        var cityName = ""
+        var latitude = 0.0
+        var longitude = 0.0
         task.addOnSuccessListener {
             println("!! " + it.latitude + " " + it.longitude)
-            //cityName = getCityName(it.latitude, it.longitude)
-            cityName = "Cluj-Napoca"
+            latitude = it.latitude
+            longitude = it.longitude
+            //cityName = "Cluj-Napoca"
         }
+        val cityName = getCityName(latitude, longitude)
 
         return "Cluj-Napoca"
     }
 
     private fun getCityName(latitude: Double, longitude: Double): String {
         var cityName = "Cluj-Napoca"
-        /*val geocoder = Geocoder(baseContext, Locale.getDefault())
+        val geocoder = Geocoder(baseContext, Locale.getDefault())
         try {
             val list = geocoder.getFromLocation(latitude, longitude, 1)
 
@@ -166,7 +171,7 @@ class WeatherActivity : AppCompatActivity() {
                     cityName = list[0].locality
         } catch (e: IOException) {
             e.printStackTrace()
-        }*/
+        }
 
         return cityName
     }
