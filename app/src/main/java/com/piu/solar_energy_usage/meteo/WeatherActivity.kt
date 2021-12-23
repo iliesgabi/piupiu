@@ -1,10 +1,8 @@
 package com.piu.solar_energy_usage.meteo
 
-import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -30,7 +28,7 @@ class WeatherActivity : AppCompatActivity() {
         setContentView(R.layout.activity_weather)
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
-        val cityName = fetchLocation()
+        val cityName = "Cluj-Napoca"
 
         val searchCity = findViewById<TextInputEditText>(R.id.searchCityEditText)
         val searchButton = findViewById<ImageView>(R.id.searchButton)
@@ -125,49 +123,5 @@ class WeatherActivity : AppCompatActivity() {
                     println(t.cause)
                 }
             })
-    }
-
-    private fun fetchLocation(): String {
-        val task = fusedLocationProviderClient.lastLocation
-
-        if (ActivityCompat.checkSelfPermission(
-                this,
-                android.Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                this,
-                android.Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),
-                101
-            )
-        }
-
-        var cityName = ""
-        task.addOnSuccessListener {
-            println("!! " + it.latitude + " " + it.longitude)
-            //cityName = getCityName(it.latitude, it.longitude)
-            cityName = "Cluj-Napoca"
-        }
-
-        return "Cluj-Napoca"
-    }
-
-    private fun getCityName(latitude: Double, longitude: Double): String {
-        var cityName = "Cluj-Napoca"
-        /*val geocoder = Geocoder(baseContext, Locale.getDefault())
-        try {
-            val list = geocoder.getFromLocation(latitude, longitude, 1)
-
-            if (list[0].locality != null)
-                if (!list[0].locality.equals(""))
-                    cityName = list[0].locality
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }*/
-
-        return cityName
     }
 }
