@@ -17,6 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Solar_energy_usage">
         <activity
+            android:name=".device.AddDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".device.room.AddRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".device.DeviceActivity"
+            android:exported="false" />
+        <activity
             android:name=".car.CarActivity"
             android:exported="false" />
         <activity

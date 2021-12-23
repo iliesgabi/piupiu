@@ -6,6 +6,7 @@
         <item android:title="ceva">
             <menu>
                 <item
+                    android:onClick="onDevicesButtonClicked"
                     android:id="@+id/item1"
                     android:icon="@drawable/ic_launcher_background"
                     android:title="Devices" />

@@ -13,4 +13,14 @@
     <string name="car">Car</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="edit_room">Edit Room</string>
+    <string name="delete_room">Delete Room</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="room_name">Room name</string>
+    <string name="device_name">Device name</string>
+    <string name="device_type">Device type</string>
+    <string name="room_type">Room type</string>
+    <string name="edit_device">Edit Device</string>
+    <string name="delete_device">Delete Device</string>
 </resources>
