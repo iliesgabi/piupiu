@@ -11,4 +11,6 @@
     <string name="pay">pay</string>
     <string name="card_details">Card details</string>
     <string name="car">Car</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
 </resources>

@@ -3,10 +3,9 @@ package com.piu.solar_energy_usage.authentication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import com.piu.solar_energy_usage.MainActivity
+import com.google.android.material.textfield.TextInputLayout
 import com.piu.solar_energy_usage.MainWindowActivity
 import com.piu.solar_energy_usage.R
 
@@ -15,62 +14,59 @@ class LogInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
 
-        val usernameRef = findViewById<TextView>(R.id.usernameInput)
-        val passwordRef = findViewById<TextView>(R.id.passwordInput)
+        val usernameInput = findViewById<TextView>(R.id.usernameInput)
+        val passwordInput = findViewById<TextView>(R.id.passwordInput)
 
         val button = findViewById<Button>(R.id.loginButton)
         button.setOnClickListener {
-            val username = usernameRef.text
-            val password = passwordRef.text
+            val username = usernameInput.text
+            val password = passwordInput.text
 
             var ok = true
 
-            val usernameError = findViewById<TextView>(R.id.usernameError)
-            val passwordError = findViewById<TextView>(R.id.passwordError)
-
+            val usernameTextInputLayout = findViewById<TextInputLayout>(R.id.username)
+            val passwordTextInputLayout = findViewById<TextInputLayout>(R.id.password)
 
             val usernameResult = validateUsername(username.toString())
             if(!usernameResult.first) {
-                usernameError.visibility = View.VISIBLE
+                usernameTextInputLayout.isErrorEnabled = true
 
                 ok = false
 
                 when(usernameResult.second) {
-                    0 -> { usernameError.text = "Username is too short" }
-                    1 -> { usernameError.text = "Username is empty" }
-                    2 -> { usernameError.text = "Username is not valid" }
+                    0 -> { usernameTextInputLayout.error = "Username is too short" }
+                    1 -> { usernameTextInputLayout.error = "Username is empty" }
+                    2 -> { usernameTextInputLayout.error = "Username is not valid" }
                 }
-
             } else {
-                usernameError.visibility = View.GONE
+                usernameTextInputLayout.isErrorEnabled = false
             }
 
             val passwordResult = validatePassword(password.toString())
             if(!passwordResult.first) {
-                passwordError.visibility = View.VISIBLE
+                passwordTextInputLayout.isErrorEnabled = true
 
                 ok = false
 
                 when(passwordResult.second) {
-                    0 -> { passwordError.text = "Password is too short" }
-                    1 -> { passwordError.text = "Password is empty" }
-                    2 -> { passwordError.text = "Password is not valid" }
+                    0 -> { passwordTextInputLayout.error = "Password is too short" }
+                    1 -> { passwordTextInputLayout.error = "Password is empty" }
+                    2 -> { passwordTextInputLayout.error = "Password is not valid" }
                 }
 
             } else {
-                passwordError.visibility = View.GONE
+                passwordTextInputLayout.isErrorEnabled = false
             }
 
             if(ok) {
                 val intent = Intent(this, MainWindowActivity::class.java)
                 startActivity(intent)
             }
-
         }
     }
 
     private fun validateUsername(username: String): Pair<Boolean, Int> {
-        if(username.length < 3) {
+        if(username.length in 1..2) {
             return Pair(false, 0)
         }
 
@@ -86,7 +82,7 @@ class LogInActivity : AppCompatActivity() {
     }
 
     private fun validatePassword(password: String): Pair<Boolean, Int> {
-        if(password.length < 3) {
+        if(password.length in 1..2) {
             return Pair(false, 0)
         }
 
