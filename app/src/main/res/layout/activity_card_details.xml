@@ -15,7 +15,8 @@
         android:layout_margin="20dp"
         android:text="@string/card_details"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cardNumber"
