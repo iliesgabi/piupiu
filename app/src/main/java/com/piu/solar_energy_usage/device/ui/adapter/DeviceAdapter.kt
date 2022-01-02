@@ -51,8 +51,7 @@ class DeviceAdapter(
             if(device.isActive)
                 activeDevices++
 
-        val noActiveDevices = context.findViewById<TextView>(R.id.noActiveDevices)
-        noActiveDevices.text = "$activeDevices active devices"
+        notifyActiveDevicesChange(activeDevices)
     }
 
     fun getDevice(position: Int): Device {
@@ -62,6 +61,11 @@ class DeviceAdapter(
     fun deleteDevice(position: Int) {
         dataSource.removeAt(position)
         this.notifyItemRemoved(position)
+    }
+
+    private fun notifyActiveDevicesChange(activeDevices: Int) {
+        val noActiveDevices = context.findViewById<TextView>(R.id.noActiveDevices)
+        noActiveDevices.text = "$activeDevices active devices"
     }
 
     inner class DeviceViewHolder(
@@ -108,6 +112,7 @@ class DeviceAdapter(
                         activeDevices--
 
                     changeSwitchState(isChecked)
+                    notifyActiveDevicesChange(activeDevices)
                 }
             }
         }
