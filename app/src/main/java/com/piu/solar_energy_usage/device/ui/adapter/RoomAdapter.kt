@@ -141,6 +141,10 @@ class RoomAdapter(
         deviceAdapter.setDataSource(devices!!)
     }
 
+    fun getRoom(position: Int): Room {
+        return dataSource[position]
+    }
+
     private fun setDeviceLayoutVisibility(visibility: Int) {
         val devicesLayout = context.findViewById<ConstraintLayout>(R.id.devicesLayout)
         devicesLayout.visibility = visibility

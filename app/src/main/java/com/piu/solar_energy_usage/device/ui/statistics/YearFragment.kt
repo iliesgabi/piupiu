@@ -96,7 +96,7 @@ class YearFragment : Fragment() {
         }
 
         val barDataSet = BarDataSet(entries, "")
-        barDataSet.color = Color.parseColor("#5584AC")
+        barDataSet.color = Color.parseColor("#5AA897")
         barDataSet.setDrawValues(false)
         barChart.data = BarData(barDataSet)
 

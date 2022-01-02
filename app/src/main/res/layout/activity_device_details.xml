@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
     android:background="@color/device_background"
     tools:context=".device.ui.device_details.DeviceDetailsActivity"
-    android:orientation="vertical">
+    android:scrollbarThumbVertical="@null">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/deviceDetailsFragment"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"/>
+        android:padding="15dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="10dp"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/deviceDetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"/>
 
-        android:text="Usage"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/deviceStatisticsFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            android:text="Usage"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
 
-</LinearLayout>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/deviceStatisticsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

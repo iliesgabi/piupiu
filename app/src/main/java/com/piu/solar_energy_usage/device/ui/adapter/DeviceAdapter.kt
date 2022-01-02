@@ -46,7 +46,6 @@ class DeviceAdapter(
         activeDevices = 0
         dataSource.addAll(devices)
         this.notifyDataSetChanged()
-        println("SET DATA")
     }
 
     fun getDevice(position: Int): Device {
@@ -118,7 +117,7 @@ class DeviceAdapter(
                 deviceStatus.setTextColor(Color.parseColor("#3E8E7E"))
                 deviceStatus.setTypeface(null, Typeface.BOLD)
 
-                deviceIconView.setCardBackgroundColor(Color.parseColor("#95D1CC"))
+                deviceIconView.setCardBackgroundColor(Color.parseColor("#D3E4CD"))
             } else {
                 deviceStatus.text = "Device is turned off"
                 deviceSwitch.isChecked = false

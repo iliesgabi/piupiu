@@ -32,6 +32,10 @@ object DeviceDataSource {
         rooms!!.add(room)
     }
 
+    fun deleteRoom(roomId: UUID) {
+        rooms?.removeIf { r -> r.id == roomId }
+    }
+
     fun getDevicesByRoomId(roomId: UUID) : List<Device>? {
         if(devices.isNullOrEmpty())
             return null

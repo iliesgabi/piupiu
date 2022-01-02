@@ -98,7 +98,6 @@ class DeviceFragment : Fragment() {
     }
 
     private fun insertRooms() {
-        println("AICI insert room")
         roomAdapter.setDataSource(DeviceDataSource.rooms!!)
     }
 
@@ -118,7 +117,7 @@ class DeviceFragment : Fragment() {
                 builder.setTitle("Please Confirm")
                     .setMessage("Are you sure you want to delete this room?")
                     .setPositiveButton("Delete") { _, _ ->
-                        val room: Room = roomAdapter.currentRoom
+                        val room: Room = roomAdapter.getRoom(item.groupId)
 
                         DeviceDataSource.rooms!!.removeAt(item.groupId)
                         DeviceDataSource.devices?.removeAll { device -> device.roomId ==  room.id}
