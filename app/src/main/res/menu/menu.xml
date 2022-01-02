@@ -8,7 +8,7 @@
                 <item
                     android:onClick="onDevicesButtonClicked"
                     android:id="@+id/item1"
-                    android:icon="@drawable/ic_launcher_background"
+                    android:icon="@drawable/ic_baseline_devices_24"
                     android:title="Devices" />
                 <item
                     android:onClick="onInvoiceButtonClicked"

@@ -23,4 +23,8 @@
     <string name="room_type">Room type</string>
     <string name="edit_device">Edit Device</string>
     <string name="delete_device">Delete Device</string>
+    <string name="device_details">Details</string>
+    <string name="device_statistics">Statistics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

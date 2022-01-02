@@ -20,4 +20,5 @@
     <color name="room_highlight_card">#F5FBB9</color>
     <color name="device_card">#E8E7E7</color>
     <color name="dark_green">#3E8E7E</color>
+    <color name="dark_blue">#193498</color>
 </resources>

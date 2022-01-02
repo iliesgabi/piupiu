@@ -8,7 +8,7 @@ import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.piu.solar_energy_usage.car.CarActivity
-import com.piu.solar_energy_usage.device.DeviceActivity
+import com.piu.solar_energy_usage.device.ui.device.DeviceActivity
 import com.piu.solar_energy_usage.invoice.InvoiceActivity
 import com.piu.solar_energy_usage.meteo.WeatherActivity
 
@@ -49,4 +49,5 @@ class MainWindowActivity : AppCompatActivity() {
         val intent = Intent(this, DeviceActivity::class.java)
         startActivity(intent)
     }
+
 }
