@@ -7,34 +7,35 @@ import android.graphics.Typeface
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.piu.solar_energy_usage.R
-import com.piu.solar_energy_usage.device.model.Device
 import com.piu.solar_energy_usage.device.data.DevicesTypes
+import com.piu.solar_energy_usage.device.model.Device
 import com.piu.solar_energy_usage.device.ui.device_details.DeviceDetailsActivity
 
-class DeviceAdapter(
+class ActiveDeviceAdapter(
     private val context: Activity
-) : RecyclerView.Adapter<DeviceAdapter.DeviceViewHolder>() {
+) : RecyclerView.Adapter<ActiveDeviceAdapter.ActiveDeviceViewHolder>() {
 
     private val dataSource = mutableListOf<Device>()
     private var activeDevices: Int = 0
 
     override fun getItemViewType(position: Int): Int = R.layout.device_item
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DeviceViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActiveDeviceViewHolder {
         val elementView = LayoutInflater.from(parent.context).inflate(
             viewType,
             parent,
             false
         )
 
-        return DeviceViewHolder(elementView)
+        return ActiveDeviceViewHolder(elementView)
     }
 
-    override fun onBindViewHolder(holder: DeviceViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ActiveDeviceViewHolder, position: Int) {
         val item = dataSource[position]
         holder.bindData(item)
     }
@@ -43,31 +44,57 @@ class DeviceAdapter(
 
     fun setDataSource(devices: List<Device>) {
         dataSource.clear()
+
+        if(devices.isNullOrEmpty()) {
+            val noActiveDevice = context.findViewById<TextView>(R.id.noActiveDevicesMessage)
+            noActiveDevice.visibility = View.VISIBLE
+            notifyActiveDevicesChange(0)
+            return
+        }
+
         dataSource.addAll(devices)
-        this.notifyDataSetChanged()
 
-        activeDevices = 0
-        for(device in dataSource)
-            if(device.isActive)
-                activeDevices++
-
-        val noActiveDevices = context.findViewById<TextView>(R.id.noActiveDevices)
-        noActiveDevices.text = "$activeDevices active devices"
+        activeDevices = devices.size
+        notifyActiveDevicesChange(activeDevices)
     }
 
-    fun getDevice(position: Int): Device {
-        return dataSource[position]
+    fun notifyDeviceChange(device: Device) {
+        for((index, item) in dataSource.withIndex()) {
+            if(item.id == device.id) {
+                if(!device.isActive) {
+                    deleteDevice(index)
+                    notifyActiveDevicesChange(--activeDevices)
+                    return
+                }
+
+                item.name = device.name
+                item.type = device.type
+                item.roomId = device.roomId
+
+                notifyItemChanged(index)
+                return
+            }
+        }
     }
 
     fun deleteDevice(position: Int) {
         dataSource.removeAt(position)
         this.notifyItemRemoved(position)
+
+        if(dataSource.isNullOrEmpty()) {
+            val noActiveDevice = context.findViewById<TextView>(R.id.noActiveDevicesMessage)
+            noActiveDevice.visibility = View.VISIBLE
+        }
     }
 
-    inner class DeviceViewHolder(
+    private fun notifyActiveDevicesChange(activeDevices: Int) {
+        val noActiveDevices = context.findViewById<TextView>(R.id.noActiveDevices2)
+        noActiveDevices.text = "$activeDevices active devices"
+    }
+
+    inner class ActiveDeviceViewHolder(
         itemView: View
     ) : RecyclerView.ViewHolder(itemView),
-        View.OnCreateContextMenuListener,
         View.OnClickListener {
 
         private var deviceIconView: CardView
@@ -78,7 +105,6 @@ class DeviceAdapter(
 
         init {
             itemView.setOnClickListener(this)
-            itemView.setOnCreateContextMenuListener(this)
 
             deviceIconView = itemView.findViewById(R.id.deviceIconView)
             deviceIcon = itemView.findViewById(R.id.deviceIcon)
@@ -90,7 +116,7 @@ class DeviceAdapter(
         fun bindData(item: Device) {
             deviceName.text = item.name
 
-            changeSwitchState(item.isActive)
+            activateSwitch()
             addSwitchListener()
 
             val deviceTypeDetails = DevicesTypes.getDeviceTypeDetails(item.type)
@@ -102,43 +128,29 @@ class DeviceAdapter(
                 if(buttonView.isPressed) {
                     dataSource[adapterPosition].isActive = isChecked
 
-                    if(isChecked)
-                        activeDevices++
-                    else
-                        activeDevices--
+                    if(!isChecked) {
+                        notifyActiveDevicesChange(--activeDevices)
 
-                    changeSwitchState(isChecked)
+                        deleteDevice(adapterPosition)
+
+                        Toast.makeText(
+                            context,
+                            "Device is turned off",
+                            Toast.LENGTH_SHORT)
+                            .show()
+                    }
                 }
             }
         }
 
-        private fun changeSwitchState(isActive: Boolean) {
-            if(isActive) {
-                deviceStatus.text = "Device is turned on"
-                deviceSwitch.isChecked = true
+        private fun activateSwitch() {
+            deviceStatus.text = "Device is turned on"
+            deviceSwitch.isChecked = true
 
-                deviceStatus.setTextColor(Color.parseColor("#3E8E7E"))
-                deviceStatus.setTypeface(null, Typeface.BOLD)
+            deviceStatus.setTextColor(Color.parseColor("#3E8E7E"))
+            deviceStatus.setTypeface(null, Typeface.BOLD)
 
-                deviceIconView.setCardBackgroundColor(Color.parseColor("#D3E4CD"))
-            } else {
-                deviceStatus.text = "Device is turned off"
-                deviceSwitch.isChecked = false
-
-                deviceStatus.setTextColor(Color.parseColor("#383739"))
-                deviceStatus.setTypeface(null, Typeface.NORMAL)
-
-                deviceIconView.setCardBackgroundColor(Color.WHITE)
-            }
-        }
-
-        override fun onCreateContextMenu(
-            menu: ContextMenu?,
-            v: View?,
-            menuInfo: ContextMenu.ContextMenuInfo?
-        ) {
-            menu?.add(this.adapterPosition, R.id.editDevice, Menu.NONE, R.string.edit_device)
-            menu?.add(this.adapterPosition, R.id.deleteDevice, Menu.NONE, R.string.delete_device)
+            deviceIconView.setCardBackgroundColor(Color.parseColor("#D3E4CD"))
         }
 
         override fun onClick(v: View?) {

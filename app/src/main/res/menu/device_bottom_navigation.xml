@@ -7,6 +7,11 @@
         android:title="@string/device_details"/>
 
     <item
+        android:id="@+id/activeDevices"
+        android:icon="@drawable/ic_active"
+        android:title="@string/active_devices"/>
+
+    <item
         android:id="@+id/deviceStatistics"
         android:icon="@drawable/ic_statistic"
         android:title="@string/device_statistics"/>

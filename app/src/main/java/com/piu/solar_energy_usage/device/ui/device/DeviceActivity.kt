@@ -13,6 +13,8 @@ import com.piu.solar_energy_usage.device.ui.device_details.DeviceDetailsActivity
 
 class DeviceActivity : AppCompatActivity() {
 
+    private lateinit var currentFragment: Fragment
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_device)
@@ -45,6 +47,11 @@ class DeviceActivity : AppCompatActivity() {
                     return@setOnNavigationItemSelectedListener true
                 }
 
+                R.id.activeDevices -> {
+                    loadFragment(ActiveDevicesFragment())
+                    return@setOnNavigationItemSelectedListener true
+                }
+
                 R.id.deviceStatistics -> {
                     loadFragment(DevicesStatisticsFragment())
                     return@setOnNavigationItemSelectedListener true
@@ -59,14 +66,15 @@ class DeviceActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.deviceFragment, fragment)
             .commit()
+
+        currentFragment = fragment
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
         when(requestCode) {
             DeviceDetailsActivity.ACTIVITY_ID -> {
-                val fragment = supportFragmentManager.findFragmentById(R.id.deviceFragment)
-                fragment?.onActivityResult(requestCode, resultCode, data)
+               currentFragment.onActivityResult(requestCode, resultCode, data)
             }
         }
 
