@@ -29,6 +29,11 @@ class AddRoomActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_room)
 
+        val btnBack = findViewById<Button>(R.id.btn_back_add_room)
+        btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
         val intentRoom = intent.getSerializableExtra("room")
         if(intentRoom != null)
             room = intentRoom as Room

@@ -3,6 +3,7 @@ package com.piu.solar_energy_usage.device.ui.device
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.piu.solar_energy_usage.R
@@ -18,6 +19,11 @@ class DeviceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_device)
+
+        val btnBack = findViewById<Button>(R.id.btn_back_devices)
+        btnBack.setOnClickListener {
+            finish()
+        }
 
         getRooms()
         getDevices()

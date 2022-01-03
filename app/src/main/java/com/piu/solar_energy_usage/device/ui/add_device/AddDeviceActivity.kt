@@ -34,6 +34,11 @@ class AddDeviceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_device)
 
+        val btnBack = findViewById<Button>(R.id.btn_back_add_device)
+        btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
         val intentDevice = intent.getSerializableExtra("device")
         if(intentDevice != null)
             device = intentDevice as Device

@@ -28,6 +28,7 @@
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/card_border.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/dotted_border.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/ic_active.xml" value="0.1259259259259259" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/ic_back.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/ic_baseline_calendar_month_24.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/ic_flash.xml" value="0.2703125" />
@@ -38,9 +39,10 @@
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/rounded_corner.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/text_underline.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/toggle_password.xml" value="0.44537037037037036" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_add_device.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_add_room.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_car.xml" value="0.21757852077001014" />
-        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_device.xml" value="0.1" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_device.xml" value="0.2" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_device_details.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_invoice.xml" value="0.4473958333333333" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_log_in.xml" value="0.4473958333333333" />
