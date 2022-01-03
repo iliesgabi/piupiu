@@ -28,6 +28,11 @@ class WeatherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
 
+        val btnBack = findViewById<Button>(R.id.btn_back_weather)
+        btnBack.setOnClickListener {
+            finish()
+        }
+
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
         val cityName = "Cluj-Napoca"
 

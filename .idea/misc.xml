@@ -3,28 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/car.xml" value="0.22291666666666668" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/card_back.xml" value="0.18541666666666667" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4203125" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/drawable/ic_pick.xml" value="0.246875" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_car.xml" value="0.35144927536231885" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_card_details.xml" value="0.264" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_invoice.xml" value="0.35144927536231885" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_log_in.xml" value="0.20677083333333332" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_main.xml" value="0.20677083333333332" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_main_window.xml" value="0.20677083333333332" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_payment.xml" value="0.23072916666666668" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_register.xml" value="0.23072916666666668" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_weather.xml" value="0.19117647058823528" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/invoice_item.xml" value="0.4" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/weather_item.xml" value="0.536" />
-        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/menu/menu.xml" value="0.4041666666666667" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_car.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_card_details.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_invoice.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_log_in.xml" value="0.19655521783181357" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_main.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_main_window.xml" value="0.26145833333333335" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_payment.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_register.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/activity_weather.xml" value="0.19655521783181357" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/invoice_item.xml" value="0.12715298885511653" />
+        <entry key="..\:/Faculty/an 4 sem 1/piu/piupiu/app/src/main/res/layout/weather_item.xml" value="0.19655521783181357" />
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1037037037037037" />
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/layout/activity_log_in.xml" value="0.1" />
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/layout/activity_main_window.xml" value="0.24444444444444444" />
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/menu/menu.xml" value="0.3173076923076923" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.225" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/drawable/ic_back.xml" value="0.29010416666666666" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/drawable/ic_launcher_background.xml" value="0.225" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/drawable/ic_menu.xml" value="0.28425925925925927" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/layout/activity_car.xml" value="0.24728260869565216" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/layout/activity_log_in.xml" value="0.1" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/layout/activity_main_window.xml" value="0.20885416666666667" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/layout/activity_register.xml" value="0.24728260869565216" />
+        <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/menu/menu.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/card_border.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/dotted_border.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/ic_active.xml" value="0.1259259259259259" />

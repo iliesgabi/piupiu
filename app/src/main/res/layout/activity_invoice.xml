@@ -7,17 +7,27 @@
     android:orientation="vertical"
     tools:context=".invoice.InvoiceActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/title"
-        android:text="@string/invoices"
-        android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_margin="20dp"
-        android:textColor="@color/black"
-        />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700">
+
+        <Button
+            android:id="@+id/btn_back_invoice"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/invoices"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="wrap_content"
