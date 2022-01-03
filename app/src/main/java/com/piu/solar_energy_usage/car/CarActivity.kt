@@ -2,6 +2,7 @@ package com.piu.solar_energy_usage.car
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import com.piu.solar_energy_usage.R
 import java.util.*
@@ -10,6 +11,11 @@ class CarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_car)
+
+        val btnBack = findViewById<Button>(R.id.btn_back_car)
+        btnBack.setOnClickListener {
+            finish()
+        }
 
         val speed = findViewById<TextView>(R.id.speedTextView)
         val hour = findViewById<TextView>(R.id.hoursTextView)
