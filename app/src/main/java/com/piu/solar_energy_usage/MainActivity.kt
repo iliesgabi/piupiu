@@ -1,9 +1,9 @@
 package com.piu.solar_energy_usage
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.piu.solar_energy_usage.authentication.LogInActivity
 import com.piu.solar_energy_usage.authentication.RegisterActivity
 

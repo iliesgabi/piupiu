@@ -14,4 +14,7 @@
     <color name="nice_orange">#F69C58</color>
 
     <color name="black_shade_1">#292D36</color>
+    <color name="light_green">#77D353</color>
+    <color name="light_blue">#3F7DE6</color>
+    <color name="light_grey">#c0ccda</color>
 </resources>

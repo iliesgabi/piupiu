@@ -3,35 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group android:checkableBehavior="single">
-        <item android:title="ceva">
+        <item android:title="User Name + Picture">
             <menu>
                 <item
                     android:id="@+id/item1"
-                    android:icon="@drawable/ic_launcher_background"
-                    android:title="Devices" />
+                    android:icon="@drawable/ic_devices"
+                    android:title="@string/devices" />
                 <item
-                    android:onClick="onInvoiceButtonClicked"
                     android:id="@+id/item2"
                     android:icon="@drawable/invoices"
-                    android:title="Invoice" />
+                    android:onClick="onInvoiceButtonClicked"
+                    android:title="@string/invoice" />
                 <item
                     android:id="@+id/item3"
-                    android:icon="@drawable/ic_launcher_background"
-                    android:title="Maintenance" />
+                    android:icon="@drawable/ic_maintenance"
+                    android:title="@string/maintenance" />
                 <item
-                    android:onClick="onCarButtonClicked"
                     android:id="@+id/item4"
                     android:icon="@drawable/car"
-                    android:title="Car" />
+                    android:onClick="onCarButtonClicked"
+                    android:title="@string/car" />
                 <item
                     android:id="@+id/item5"
-                    android:icon="@drawable/ic_launcher_background"
-                    android:title="Suggestions" />
+                    android:icon="@drawable/ic_suggestions"
+                    android:title="@string/suggestions" />
                 <item
-                    android:onClick="onWeatherButtonClicked"
                     android:id="@+id/item6"
                     android:icon="@drawable/weather"
-                    android:title="Weather" />
+                    android:onClick="onWeatherButtonClicked"
+                    android:title="@string/weather" />
             </menu>
         </item>
     </group>
@@ -39,10 +39,10 @@
         <item android:title="">
             <menu>
                 <item
-                    android:onClick="onLogOutButtonClicked"
                     android:id="@+id/logOutMenuButton"
-                    android:icon="@drawable/ic_launcher_background"
-                    android:title="Log Out" />
+                    android:icon="@drawable/ic_logout"
+                    android:onClick="onLogOutButtonClicked"
+                    android:title="@string/log_out" />
             </menu>
         </item>
     </group>
