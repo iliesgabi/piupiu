@@ -1,0 +1,19 @@
+{
+  "rooms": [
+    {
+      "id": "a859a5fe-ede9-400b-903f-5ccfffaa1789",
+      "name": "Bucatarie",
+      "type": "Kitchen"
+    },
+    {
+      "id": "808a915f-25d1-423b-88dc-a99bc06091c9",
+      "name": "Camera copil",
+      "type": "Bedroom"
+    },
+    {
+      "id": "c270d868-8cb7-4073-90c0-06bc7082e6a7",
+      "name": "Baie",
+      "type": "Bathroom"
+    }
+  ]
+}

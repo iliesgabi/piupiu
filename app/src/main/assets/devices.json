@@ -1,0 +1,32 @@
+{
+  "devices": [
+    {
+      "id": "da34b3e0-e18a-4ea4-8095-6c555d638acc",
+      "name": "Cuptor",
+      "roomId": "a859a5fe-ede9-400b-903f-5ccfffaa1789",
+      "type": "Oven",
+      "isActive": false
+    },
+    {
+      "id": "b23c2889-6428-4703-bbc0-fccc6e3e7f85",
+      "name": "Frigider",
+      "roomId": "a859a5fe-ede9-400b-903f-5ccfffaa1789",
+      "type": "Fridge",
+      "isActive": true
+    },
+    {
+      "id": "9edd57aa-e089-4f88-98fc-5fa202e399b6",
+      "name": "Masina de spalat",
+      "roomId": "c270d868-8cb7-4073-90c0-06bc7082e6a7",
+      "type": "Washing machine",
+      "isActive": false
+    },
+    {
+      "id": "4e7243a3-035c-4c98-92f0-5e33a9b04ecb",
+      "name": "TV Mic",
+      "roomId": "808a915f-25d1-423b-88dc-a99bc06091c9",
+      "type": "TV",
+      "isActive": true
+    }
+  ]
+}

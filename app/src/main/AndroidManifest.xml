@@ -18,6 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Solar_energy_usage">
         <activity
+            android:name="com.piu.solar_energy_usage.device.ui.device_details.DeviceDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".device.ui.add_device.AddDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".device.ui.add_room.AddRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".device.ui.device.DeviceActivity"
+            android:exported="false" />
+        <activity
             android:name=".car.CarActivity"
             android:exported="false" />
         <activity

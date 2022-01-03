@@ -12,9 +12,16 @@
     <color name="green">#228B22</color>
     <color name="background">#83F6BE58</color>
     <color name="nice_orange">#F69C58</color>
-
     <color name="black_shade_1">#292D36</color>
     <color name="light_green">#77D353</color>
     <color name="light_blue">#3F7DE6</color>
     <color name="light_grey">#c0ccda</color>
+    <color name="device_background">#F7F7F7</color>
+    <color name="grey">#7F7C82</color>
+    <color name="dark_grey">#383739</color>
+    <color name="room_card">#DDEDEA</color>
+    <color name="room_highlight_card">#F5FBB9</color>
+    <color name="device_card">#E8E7E7</color>
+    <color name="dark_green">#3E8E7E</color>
+    <color name="dark_blue">#193498</color>
 </resources>
