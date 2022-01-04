@@ -1,0 +1,32 @@
+{
+  "providers": [
+    {
+      "id": "da34b3e0-e18a-4ea4-8095-6c555d638acc",
+      "name": "Aurora Solar",
+      "contact": "support@aurorasolar.com",
+      "description": "In 2012, while still in graduate school, Sam and Chris installed a commercial solar system for a school in East Africa. The project was a resounding success, allowing the school to save on its electricity bills as well as have a reliable and carbon-free source of energy.\n\nHowever, Sam and Chris experienced firsthand the inefficiency of the solar sales, design, and commissioning process. Although the system itself took only a few weeks to install, research, financial calculations, and system design took several months.\n\nTalking to other solar installers, they found that soft-costs were impeding the growth of the industry. Based on these experiences, they founded Aurora with the goal of enabling any solar professional to design and sell an optimal solar project in minutes.\n\nTo date, Aurora has been used to design over 5 million solar installations. And we’re just getting started!\n\nAurora Solar’s software helps solar energy providers streamline their design and sales processes. Using their software, companies can conduct shading analysis, design systems, perform NEC validations, compare financing options, create sales proposals, and more. Aurora Solar also helps teams with remote site analysis, energy production estimates, and advanced engineering.",
+      "rating": 5.0
+    },
+    {
+      "id": "da34b3e0-e18a-4ea4-8095-6c555d638acd",
+      "name": "Sunrun",
+      "contact": "(844) 321-6937",
+      "description": "Enjoy safe, clean, and reliable backup power to keep your family powering forward in the event of a blackout. Brightbox saves you money by seamlessly optimizing when a home uses electricity generates from solar, stored in the battery, or from the grid. Purchase or lease Brightbox from Sunrun today!\n\nWe know going solar can be complicated. We are here as your expert guide every step of the way. With our customers, we are creating a planet run by the sun.\n\nSunrun develops customized solar systems designed to give homeowners more control and greater flexibility. The company offers several leasing and purchasing options in addition to 24/7 monitoring and repairs. Additionally, Sunrun’s Automated Site Modeling tool allows homeowners to personalize their solar system so that it matches their lifestyle and energy needs.",
+      "rating": 3.5
+    },
+    {
+      "id": "da34b3e0-e18a-4ea4-8095-6c555d638ace",
+      "name": "8minute Solar Energy",
+      "contact": "info@8minute.com",
+      "description": "We believe solar energy is the key to a world where energy is clean, cost-effective, dependable, and accessible to all. Through data-driven innovation and unmatched expertise in design and engineering, we’re bringing forward-thinking climate solutions to life on a massive scale. With every next-generation plant we develop in partnership with utilities, corporates and community choice aggregators around the country, we underscore solar’s ability to affordably and reliably power everyday life with clean, renewable energy – day and night.\n\nNamed after the amount of time it takes the sun to reach the Earth, 8minute Solar Energy is dedicated to building custom-optimized solar power plants. The company’s power plants combine solar with smart storage solutions, which enables their projects to operate like conventional utility assets without CO2 emissions. 8minute boasts a large number of projects scattered across California and the Southwest.",
+      "rating": 2.7
+    },
+    {
+      "id": "da34b3e0-e18a-4ea4-8095-6c555d638acf",
+      "name": "Sunpro Solar",
+      "contact": "info@gosunpro.com",
+      "description": "Founded in 2008, Sunpro Solar is one of the leading providers of rooftop solar in the United States. Sunpro Solar designs, installs, and maintains solar panels on residential and commercial properties. Sunpro Solar has a proven history and reputation for providing quality service, and was ranked #2 for 2021 Solar Power World’s Magazine Top Residential Solar Installer in the United States.\n\nWe are obsessed with providing an excellent customer experience from start to finish. If everything doesn’t go perfect, we work hard to make it right. The switch to solar takes an entire team. From educating homeowners and the community to designing a custom system and installing it quickly, we take pride in handling everything solar.\n\nSunpro Solar provides rooftop solar solutions to residential and commercial properties nationwide. Once the company installs solar panels, customers gain access to online solar monitoring, which allows them to track their energy consumption. Sunpro Solar offers its services in several states including Illinois, Florida and Arizona. ",
+      "rating": 4
+    }
+  ]
+}
