@@ -12,6 +12,7 @@ import com.piu.solar_energy_usage.car.CarActivity
 import com.piu.solar_energy_usage.device.ui.device.DeviceActivity
 import com.piu.solar_energy_usage.invoice.InvoiceActivity
 import com.piu.solar_energy_usage.meteo.WeatherActivity
+import com.piu.solar_energy_usage.provider.ProviderActivity
 
 class MainWindowActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,11 @@ class MainWindowActivity : AppCompatActivity() {
 
     fun onCarButtonClicked(item: MenuItem) {
         val intent = Intent(this, CarActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onProvidersButtonClicked(item: MenuItem) {
+        val intent = Intent(this, ProviderActivity::class.java)
         startActivity(intent)
     }
 
