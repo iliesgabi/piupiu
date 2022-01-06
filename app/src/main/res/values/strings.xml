@@ -41,4 +41,6 @@
     <string name="invalidate">Invalidate</string>
     <string name="contract">Contract</string>
     <string name="today">Today</string>
+    <string name="solar_panel">Solar Panel</string>
+    <string name="solar_panels">Solar Panels</string>
 </resources>

@@ -18,6 +18,12 @@
         android:theme="@style/Theme.Solar_energy_usage"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".solar_panels.SolarPanelsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".solar_panels.SolarPanelsActivity"
+            android:exported="false" />
+        <activity
             android:name=".provider.ProviderDetailActivity"
             android:exported="false" />
         <activity

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".solar_panels.SolarPanelsDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/solarPanelDetailsToolbar"
+        android:background="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_back_solar_panels_details"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/solarPanelDetailsTitle"
+            android:text="@string/solar_panels"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/panelDetailsImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sp"
+        app:layout_constraintTop_toBottomOf="@+id/solarPanelDetailsToolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/solarPanelLongDescription"
+        app:layout_constraintTop_toBottomOf="@id/panelDetailsImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Descriere1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/solarPanelShortDescription"
+        app:layout_constraintTop_toBottomOf="@id/solarPanelLongDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="Descriere2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

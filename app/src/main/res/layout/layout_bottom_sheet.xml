@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottomShitContainer"
+    android:background="@drawable/bottom_sheet_suggestion"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/panelBottomSheetTitle"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Sharp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/panelBottomSheetImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panelBottomSheetDescription"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text= "Warranty Left: 15 years \nPower Produced: 0 kW"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text= "Total Warranty: 15 years \n Maximum power output per year: 370 kW"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/solarPanelFinishAdd"
+        android:layout_gravity="center"
+        android:text="Add"
+    />
+</LinearLayout>

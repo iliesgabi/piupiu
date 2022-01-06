@@ -23,6 +23,7 @@ import com.piu.solar_energy_usage.device.ui.device.DeviceActivity
 import com.piu.solar_energy_usage.invoice.InvoiceActivity
 import com.piu.solar_energy_usage.meteo.WeatherActivity
 import com.piu.solar_energy_usage.provider.ProviderActivity
+import com.piu.solar_energy_usage.solar_panels.SolarPanelsActivity
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.random.Random
@@ -124,6 +125,11 @@ class MainWindowActivity : AppCompatActivity() {
 
     fun onProvidersButtonClicked(item: MenuItem) {
         val intent = Intent(this, ProviderActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onSuggestionsButtonClicked(item: MenuItem) {
+        val intent = Intent(this, SolarPanelsActivity::class.java)
         startActivity(intent)
     }
 
