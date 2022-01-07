@@ -17,6 +17,7 @@
                 <item
                     android:id="@+id/item3"
                     android:icon="@drawable/ic_maintenance"
+                    android:onClick="onMaintenanceButtonClicked"
                     android:title="@string/maintenance" />
                 <item
                     android:id="@+id/item4"
