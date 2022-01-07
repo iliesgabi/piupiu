@@ -6,6 +6,8 @@ import android.icu.text.SimpleDateFormat
 import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +23,7 @@ import com.google.android.material.appbar.MaterialToolbar
 import com.piu.solar_energy_usage.car.CarActivity
 import com.piu.solar_energy_usage.device.ui.device.DeviceActivity
 import com.piu.solar_energy_usage.invoice.InvoiceActivity
+import com.piu.solar_energy_usage.maintenance.PanelsMaintenance
 import com.piu.solar_energy_usage.meteo.WeatherActivity
 import com.piu.solar_energy_usage.provider.ProviderActivity
 import com.piu.solar_energy_usage.solar_panels.SolarPanelsActivity
@@ -35,6 +38,20 @@ class MainWindowActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_window)
+
+
+        var energyConsumeWarnings = findViewById<ImageView>(R.id.energyConsumeSuggestion)
+
+        energyConsumeWarnings.setOnClickListener {
+            AlertDialog.Builder(it.context)
+                .setTitle("Energy Consumption Warning")
+                .setMessage("It seems you consumed a lot of energy in the last 24 hours.\nWe suggest you to turn of the lights in the bathroom since the devices in there were not used in the last 12 hours.")
+                .setPositiveButton(android.R.string.ok, null)
+                .setIcon(R.drawable.ic_baseline_warning_24)
+                .show()
+
+            energyConsumeWarnings.visibility = View.GONE
+        }
 
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
@@ -101,7 +118,7 @@ class MainWindowActivity : AppCompatActivity() {
         pieChart.isDrawHoleEnabled = true
         pieChart.setHoleColor(Color.WHITE)
 
-        pieChart.setDrawCenterText(true);
+        pieChart.setDrawCenterText(true)
 
         pieChart.centerText = "${consumed - produced + wasted} kWh"
 
@@ -125,6 +142,11 @@ class MainWindowActivity : AppCompatActivity() {
 
     fun onProvidersButtonClicked(item: MenuItem) {
         val intent = Intent(this, ProviderActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onMaintenanceButtonClicked(item: MenuItem) {
+        val intent = Intent(this, PanelsMaintenance::class.java)
         startActivity(intent)
     }
 

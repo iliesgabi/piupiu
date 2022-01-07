@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/bottomShitContainer"
-    android:background="@drawable/bottom_sheet_suggestion"
+    android:background="#00bb88"
     android:orientation="vertical"
     >
     <TextView
