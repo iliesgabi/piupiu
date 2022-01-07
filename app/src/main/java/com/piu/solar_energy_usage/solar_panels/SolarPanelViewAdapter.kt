@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.piu.solar_energy_usage.R
 import com.piu.solar_energy_usage.solar_panels.model.SolarPanel
-import java.util.*
 
 class SolarPanelViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -30,7 +29,7 @@ class SolarPanelViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         "Sunpower has been making solar panels for 35 years and says its solar panels have high efficiency and are more reliable than conventional solar panels. Among the six popular brands listed on this page, it's one of only two to offer 25-year product and service warranties. \n",
         "LG might be best-known for its TVs, but it's now bringing its 50 years of electrical technology experience to solar panels. Its solar panel range includes high-efficiency panels, matt black panels and solar panels which generate electricity on both sides (bifacial). \n",
         "Panasonic's choice of solar panels includes smaller and slimmer panels for small or complicated roofs, matt-black panels and higher efficiency panels. It has been making solar pv panels since 1975, under the Sanyo brand until 2012\n"
-        )
+    )
 
     private var solarPanels: MutableList<SolarPanel> = arrayListOf(
         SolarPanel(ids[0], itemTitles[0], itemDescriptions[0], largeDescriptions[0], 11, 60),
@@ -75,7 +74,7 @@ class SolarPanelViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             alert.setPositiveButton(android.R.string.yes) { dialog, which ->
                 solarPanels.removeAt(holder.adapterPosition)
                 notifyItemRemoved(holder.adapterPosition)
-                notifyItemRangeChanged(holder.adapterPosition-1, solarPanels.size+1)
+                notifyItemRangeChanged(holder.adapterPosition - 1, solarPanels.size + 1)
             }
 
             alert.setNegativeButton(android.R.string.no) { dialog, which ->
@@ -90,16 +89,24 @@ class SolarPanelViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         holder.itemView.setOnClickListener { v: View ->
             var intent = Intent(v.context, SolarPanelsDetails::class.java)
             intent.putExtra("solarPanelTitle", solarPanels[holder.adapterPosition].title)
-            intent.putExtra("solarPanelShortDescription", solarPanels[holder.adapterPosition].description)
-            intent.putExtra("solarPanelLargeDescription", solarPanels[holder.adapterPosition].largeDescriptions)
+            intent.putExtra(
+                "solarPanelShortDescription",
+                solarPanels[holder.adapterPosition].description
+            )
+            intent.putExtra(
+                "solarPanelLargeDescription",
+                solarPanels[holder.adapterPosition].largeDescriptions
+            )
             v.context.startActivity(intent)
         }
 
     }
-    fun addNewPanel(panel: SolarPanel){
+
+    fun addNewPanel(panel: SolarPanel) {
         solarPanels.add(panel)
-        notifyItemRangeChanged(0, solarPanels.size+1)
+        notifyItemRangeChanged(0, solarPanels.size + 1)
     }
+
     override fun getItemCount(): Int {
         return solarPanels.size
     }

@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.TextView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.piu.solar_energy_usage.R
-import org.w3c.dom.Text
 
 class BottomSheetFragment : BottomSheetDialogFragment(), View.OnClickListener {
 
@@ -51,9 +50,9 @@ class BottomSheetFragment : BottomSheetDialogFragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        var bundle =  Bundle()
-        bundle.putString("title",title)
-        bundle.putString("description",description)
+        var bundle = Bundle()
+        bundle.putString("title", title)
+        bundle.putString("description", description)
         mListener!!.onItemClick(bundle)
         dismiss()
     }

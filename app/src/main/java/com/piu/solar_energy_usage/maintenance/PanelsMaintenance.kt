@@ -1,8 +1,8 @@
 package com.piu.solar_energy_usage.maintenance
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.piu.solar_energy_usage.R
@@ -14,7 +14,7 @@ class PanelsMaintenance : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R .layout.activity_panels_maintenance)
+        setContentView(R.layout.activity_panels_maintenance)
 
         val btnBack = findViewById<Button>(R.id.btn_back_maintenance)
         btnBack.setOnClickListener {
