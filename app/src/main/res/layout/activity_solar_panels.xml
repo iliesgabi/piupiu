@@ -7,36 +7,43 @@
     android:orientation="vertical"
     tools:context=".solar_panels.SolarPanelsActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/solarPanelToolbar"
+    <LinearLayout
+        android:id="@+id/linearlayoutPanels"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/purple_700"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_back_solar_panels"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/ic_back" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/solarPanelToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_700"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/solar_panels"
-            android:textColor="@color/white"
-            android:textSize="23sp" />
+            <Button
+                android:id="@+id/btn_back_solar_panels"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_back" />
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/solar_panels"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </androidx.appcompat.widget.Toolbar>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/panelsList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/solarPanelToolbar"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/panelsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/solarPanelToolbar" />
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_solarPanelAdd"
@@ -46,6 +53,7 @@
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
         app:borderWidth="1dp"
+        app:layout_anchor="@id/linearlayoutPanels"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_add_24" />
