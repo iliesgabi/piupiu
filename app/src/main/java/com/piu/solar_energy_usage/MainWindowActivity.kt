@@ -49,8 +49,6 @@ class MainWindowActivity : AppCompatActivity() {
                 .setPositiveButton(android.R.string.ok, null)
                 .setIcon(R.drawable.ic_baseline_warning_24)
                 .show()
-
-            energyConsumeWarnings.visibility = View.GONE
         }
 
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
