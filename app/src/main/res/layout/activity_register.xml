@@ -130,6 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:backgroundTint="@color/light_blue"
+            android:textColor="@color/white"
             android:text="@string/register" />
 
     </LinearLayout>

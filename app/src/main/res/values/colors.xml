@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#DFEEEA</color>
+    <color name="purple_200">#5E8B7E</color>
     <color name="purple_500">#5E8B7E</color>
     <color name="purple_700">#2F5D62</color>
     <color name="teal_200">#FF03DAC5</color>
@@ -9,11 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#CD0C0C</color>
     <color name="red_shade_2">#A91818</color>
-    <color name="green">#519259</color>
+    <color name="green">#3E8E7E</color>
     <color name="background">#83F6BE58</color>
     <color name="nice_orange">#F69C58</color>
     <color name="black_shade_1">#292D36</color>
-    <color name="light_green">#77D353</color>
+    <color name="light_green">#DFEEEA</color>
     <color name="light_blue">#3F7DE6</color>
     <color name="light_grey">#c0ccda</color>
     <color name="device_background">#F7F7F7</color>
@@ -25,5 +25,5 @@
     <color name="dark_green">#3E8E7E</color>
     <color name="dark_blue">#193498</color>
     <color name="yellow">#d6ab33</color>
-    <color name="cardBackground">#F9F3DF</color>
+    <color name="cardBackground">#FBFAF0</color>
 </resources>

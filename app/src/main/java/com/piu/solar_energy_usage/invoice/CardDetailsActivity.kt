@@ -13,6 +13,11 @@ class CardDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_card_details)
 
+        val btnBack = findViewById<Button>(R.id.btn_back_card_details)
+        btnBack.setOnClickListener {
+            finish()
+        }
+
         val invoice = intent.getSerializableExtra("invoice") as Invoice
 
         val payButton = findViewById<Button>(R.id.payButton)

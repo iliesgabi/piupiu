@@ -22,36 +22,21 @@
         <entry key="..\:/Faculty/an4sem1/piu/piupiu/app/src/main/res/menu/menu.xml" value="0.3173076923076923" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/drawable/bottom_sheet_suggestion.xml" value="0.22135416666666666" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/drawable/delete_panel_logo.xml" value="0.3769230769230769" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/drawable/ic_back.xml" value="0.3769230769230769" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/drawable/ic_baseline_warning_24.xml" value="0.3769230769230769" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/drawable/weather.xml" value="0.3769230769230769" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout-v28/panel_card.xml" value="0.20572916666666666" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_add_device.xml" value="0.36666666666666664" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_car.xml" value="0.20572916666666666" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_card_details.xml" value="0.20572916666666666" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_device_details.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_invoice.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_log_in.xml" value="0.36231884057971014" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_main.xml" value="0.3654891304347826" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_main_window.xml" value="0.3654891304347826" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_panels_maintenance.xml" value="0.3654891304347826" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_panels_maintenance_details.xml" value="0.3654891304347826" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_payment.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_provider_detail.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_register.xml" value="0.36231884057971014" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_solar_panels.xml" value="0.36666666666666664" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_solar_panels_details.xml" value="0.36666666666666664" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/activity_weather.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/device_item.xml" value="0.36231884057971014" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/fragment_device.xml" value="0.36666666666666664" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/invoice_item.xml" value="0.36231884057971014" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.20520833333333333" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/maintenance_card.xml" value="0.3654891304347826" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/maintenance_panel_details.xml" value="0.3654891304347826" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/panel_card.xml" value="0.36666666666666664" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/provider_fragment.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/layout/weather_item.xml" value="0.36231884057971014" />
-        <entry key="..\:/PiuPiu/piupiu/app/src/main/res/menu/device_context_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/PiuPiu/piupiu/app/src/main/res/menu/menu.xml" value="0.20572916666666666" />
         <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.225" />
         <entry key="..\:/UTC-N/Gabi Tohos/An 4/Sem 1/PIU/Proiect/solar_energy_usage/app/src/main/res/drawable/ic_back.xml" value="0.29010416666666666" />
@@ -77,15 +62,18 @@
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/rounded_corner.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/text_underline.xml" value="0.4635416666666667" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/drawable/toggle_password.xml" value="0.44537037037037036" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout-v28/panel_card.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_add_device.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_add_room.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_car.xml" value="0.21757852077001014" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_card_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_device.xml" value="0.2" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_device_details.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_invoice.xml" value="0.4473958333333333" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_log_in.xml" value="0.4473958333333333" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_main_window.xml" value="0.30224075039082854" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/activity_payment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/device_item.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/fragment_active_devices.xml" value="0.22418478260869565" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/fragment_day.xml" value="0.1" />
@@ -97,7 +85,11 @@
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/fragment_statistics.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/fragment_statistics2.xml" value="0.2" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/fragment_year.xml" value="0.1" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/invoice_item.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/maintenance_card.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/month_picker.xml" value="0.1" />
+        <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/panel_card.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/room_item.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/statistics_maker_view.xml" value="0.4473958333333333" />
         <entry key="..\:/Users/Andreea/Desktop/Piu_Proiect/piupiu/app/src/main/res/layout/statistics_room_item.xml" value="0.15789473684210525" />

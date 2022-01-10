@@ -54,18 +54,25 @@ class InvoiceActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (data?.getSerializableExtra("invoice") != null) {
-            val invoice = data?.getSerializableExtra("invoice") as Invoice
+        when(requestCode) {
+            1002 -> {
+                if (data?.getSerializableExtra("invoice") != null) {
+                    val invoice = data?.getSerializableExtra("invoice") as Invoice
 
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("you paid invoice no. " + invoice.number)
-                .setNegativeButton("close", null)
-                .create().show()
+                    val builder = AlertDialog.Builder(this)
+                    builder.setTitle("you paid invoice no. " + invoice.number)
+                        .setNegativeButton("close", null)
+                        .create().show()
 
-            invoiceAdapter.setPaid(invoice)
-        } else {
-            invoiceAdapter.setDataSource(Util.dataSource)
+                    invoiceAdapter.setPaid(invoice)
+                    println("AICI1")
+                } else {
+                    println("AICI2")
+                    invoiceAdapter.setDataSource(Util.dataSource)
+                }
+            }
         }
+
         super.onActivityResult(requestCode, resultCode, data)
     }
 }

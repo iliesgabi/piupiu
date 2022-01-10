@@ -96,7 +96,7 @@ class InvoiceAdapter(
         dataSource.clear()
         println(invoice)
         dataSource.addAll(invoice)
-        Util.dataSource = dataSource
+        //Util.dataSource = dataSource
         notifyDataSetChanged()
     }
 
