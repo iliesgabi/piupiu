@@ -77,6 +77,7 @@ class LogInActivity : AppCompatActivity() {
 
             if (ok) {
                 val intent = Intent(this, MainWindowActivity::class.java)
+                intent.putExtra("userName", usernameTextInputLayout.toString())
                 startActivity(intent)
 
                 finish()

@@ -24,8 +24,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="122dp"
             android:text="@string/LogIn"
+            android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="23sp" />
 
@@ -89,7 +89,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/LogIn"
             android:textColor="#fff"
-            app:backgroundTint="@color/light_green" />
+            app:backgroundTint="@color/green" />
 
     </LinearLayout>
 

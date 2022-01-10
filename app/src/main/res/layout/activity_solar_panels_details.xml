@@ -41,10 +41,11 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/solarPanelLongDescription"
         app:layout_constraintTop_toBottomOf="@id/panelDetailsImage"
@@ -52,12 +53,12 @@
         android:textStyle="bold"
         android:textSize="20dp"
         android:text="Descriere1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/solarPanelShortDescription"
         app:layout_constraintTop_toBottomOf="@id/solarPanelLongDescription"
@@ -65,8 +66,8 @@
         android:textStyle="bold"
         android:textSize="24dp"
         android:text="Descriere2"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

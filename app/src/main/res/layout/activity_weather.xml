@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".meteo.WeatherActivity">
+    tools:context=".meteo.WeatherActivity"
+    android:background="@color/purple_200"
+    >
 
     <RelativeLayout
         android:id="@+id/idRLHome"
@@ -33,13 +35,6 @@
                 android:textSize="23sp" />
 
         </androidx.appcompat.widget.Toolbar>
-
-<!--        <ImageView-->
-<!--            android:id="@+id/idIVBlack"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:scaleType="centerCrop"-->
-<!--            android:src="@drawable/sky2" />-->
 
         <TextView
             android:id="@+id/cityName"

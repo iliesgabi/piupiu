@@ -4,9 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
-import android.view.Gravity
-import android.view.MenuItem
-import android.view.View
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -38,7 +36,6 @@ class MainWindowActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_window)
-
 
         var energyConsumeWarnings = findViewById<ImageView>(R.id.energyConsumeSuggestion)
 
@@ -87,9 +84,9 @@ class MainWindowActivity : AppCompatActivity() {
         pieChart.setUsePercentValues(true)
         val dataEntries = ArrayList<PieEntry>()
 
-        val produced = 0.0f + Random.nextFloat() * (200.0f)
-        val consumed = 0.0f + Random.nextFloat() * (700.0f)
-        val wasted = 0.0f + Random.nextFloat() * (75.0f)
+        val produced = Random.nextFloat() * 200.0f
+        val consumed = Random.nextFloat() * 700.0f
+        val wasted = Random.nextFloat() * 75.0f
 
         dataEntries.add(PieEntry(produced, "Produced"))
         dataEntries.add(PieEntry(consumed, "Consumed"))
@@ -180,6 +177,14 @@ class MainWindowActivity : AppCompatActivity() {
     fun onDevicesButtonClicked(item: MenuItem) {
         val intent = Intent(this, DeviceActivity::class.java)
         startActivity(intent)
+    }
+
+    override fun onCreateContextMenu(
+        menu: ContextMenu?,
+        v: View?,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+        super.onCreateContextMenu(menu, v, menuInfo)
     }
 
 }

@@ -115,7 +115,7 @@ class DeviceFragment : Fragment() {
             R.id.deleteRoom -> {
                 val builder =  AlertDialog.Builder(deviceContext)
                 builder.setTitle("Please Confirm")
-                    .setMessage("Are you sure you want to delete this room?")
+                    .setMessage("Are you sure you want to delete this room?\nAll associated devices will be deleted!")
                     .setPositiveButton("Delete") { _, _ ->
                         val room: Room = roomAdapter.getRoom(item.groupId)
 

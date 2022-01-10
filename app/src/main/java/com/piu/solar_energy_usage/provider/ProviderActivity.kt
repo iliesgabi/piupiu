@@ -27,7 +27,7 @@ class ProviderActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.rv_provider)
         val progressBar = findViewById<ProgressBar>(R.id.pb_provider)
 
-        Timer().schedule(delay = 3000) {
+        Timer().schedule(delay = 1000) {
             Handler(mainLooper).post {
                 recyclerView.visibility = View.VISIBLE
                 progressBar.visibility = View.INVISIBLE

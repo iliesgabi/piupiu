@@ -42,10 +42,10 @@ class InvoiceAdapter(
             invoicePrice.text = price
             if (item.isPaid) {
                 invoiceButton.text = "Paid"
-                invoiceButton.setBackgroundColor(Color.parseColor("#228B22"))
+                invoiceButton.setBackgroundColor(Color.parseColor("#519259"))
             } else {
                 invoiceButton.text = "Pay"
-                invoiceButton.setBackgroundColor(Color.parseColor("#BD0F32"))
+                invoiceButton.setBackgroundColor(Color.parseColor("#A91818"))
             }
             invoiceButton.setOnClickListener {
                 if (!item.isPaid) {
