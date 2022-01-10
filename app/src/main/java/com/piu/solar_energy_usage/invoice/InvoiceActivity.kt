@@ -65,9 +65,7 @@ class InvoiceActivity : AppCompatActivity() {
                         .create().show()
 
                     invoiceAdapter.setPaid(invoice)
-                    println("AICI1")
                 } else {
-                    println("AICI2")
                     invoiceAdapter.setDataSource(Util.dataSource)
                 }
             }

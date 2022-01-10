@@ -89,6 +89,7 @@ class CardDetailsActivity : AppCompatActivity() {
 
                 val intent = Intent(this, InvoiceActivity::class.java)
                 intent.putExtra("invoice", invoice)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                 startActivity(intent)
                 setResult(RESULT_OK, intent)
             }

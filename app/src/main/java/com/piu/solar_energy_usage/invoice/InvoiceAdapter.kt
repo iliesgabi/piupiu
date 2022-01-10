@@ -94,9 +94,8 @@ class InvoiceAdapter(
 
     fun setDataSource(invoice: List<Invoice>) {
         dataSource.clear()
-        println(invoice)
         dataSource.addAll(invoice)
-        //Util.dataSource = dataSource
+        Util.dataSource = dataSource
         notifyDataSetChanged()
     }
 
